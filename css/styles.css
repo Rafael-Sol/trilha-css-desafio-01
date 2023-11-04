@@ -1,1 +1,19 @@
 /* Criação de Folha de Estilos (CSS) para desafio de código da DIO */
+
+p {
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.teste-estilo { /* NOME ABAIXO DO LOGOTIPO */
+font-family: Raleway;
+font-size: 40px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
