@@ -1,27 +1,203 @@
 /* Criação de Folha de Estilos (CSS) para desafio de código da DIO */
 
-/* CONFIGURAÇÕES MAIS UTILIZADAS COMO BASE */
-a, p {
-  color: #FFF;
-  text-align: center;
-  font-family: Raleway;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
+    /* IMPORTANDO FONTES GLOBAIS */
+    @import url('https://fonts.googleapis.com/css2?family=Raleway');
 
-/* NOME ABAIXO DO LOGOTIPO */
-.teste-estilo { 
-font-family: Raleway;
-font-size: 40px;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
-}
+    /* CORPO DA PÁGINA */
+    body {
+      background-color: rgb(0, 0, 0);
+    }
 
-/* xxxxx */
+    /* SEÇÕES REGULARES */
 
-/* xxxxx */
+    header {
+      padding-top: 32px;
+      padding-bottom: 48px;
+      margin-bottom: 64px;
+      border-bottom: 1px solid #33A8DB;
+      background: url(../assets/images/banner.png),
+                  linear-gradient(180deg, 
+                  rgba(0, 0, 0, 1.00) 0%,
+                  rgba(0, 98, 128, 0.45) 50%, 
+                  rgba(0, 0, 0, 1.00) 100%);
 
-/* xxxxx */
+    }
+
+    /* header.banner,
+    div.banner-content,
+    div.logo {
+      justify-content: center;
+      align-items: center;
+    } */
+
+    main {
+      justify-content: center;
+      align-items: center;
+      display: inline-flex;
+      flex-direction: column;
+      display: inline-flex;
+      gap: 24px;
+    }
+
+    footer {
+
+      padding-top: 64px;
+      padding-bottom: 48px;
+      margin-top: 64px;
+
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid #33A8DB;
+      background: linear-gradient(180deg, 
+        rgba(51, 168, 219, 0.00) 0%, 
+        rgba(51, 168, 219, 0.20) 100%);
+
+      color: #FFF;
+      text-align: center;
+      font-family: Raleway;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+    }
+
+    footer a {  /* Hiperlink do rodapé */
+      color: #33A8DB;
+    }
+
+    /* =================================== */
+    /* ============ ELEMENTOS ============ */
+    /* =================================== */
+
+    /* PARÁGRAFO BASE (Corpo do texto) */
+    p, span {
+      /* Cores */
+      color: rgb(255, 255, 255);
+
+      /* Parágrafo */
+      text-align: center;
+      line-height: normal;
+
+      /* Fonte */
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;      
+      font-weight: 400;
+      
+    }
+
+    /* HEADER 1 (Título) */
+    h1 {
+      /* Estilo de Coloração */
+      background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      /* Parágrafo */
+      text-align: center;
+      text-transform: uppercase;
+      line-height: normal;
+
+      /* Fonte */
+      font-family: 'Raleway-Bold', sans-serif;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 900;
+      
+    }
+
+    /* HEADER 2 (Subtítulo) */
+    h2 {
+      /* Cores */
+      color: #33A8DB;
+      
+      /* Parágrafo */
+      text-align: center;
+      letter-spacing: 6.08px;
+      text-transform: uppercase;
+
+      /* Fonte */
+      font-family: 'Raleway', sans-serif;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;   
+
+      /* Espaçamento */
+      margin: 48px;
+    }
+
+    /* ================================= */
+    /* ============ CLASSES ============ */
+    /* ================================= */
+
+    .banner-content p {
+      font-size: 20px;
+    }
+
+    .module {
+      /* Cores */
+      color: rgb(255, 255, 255);
+
+      /* Parágrafo */
+      text-align: center;
+      line-height: 64px;
+
+      /* Fonte */
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;      
+      font-weight: 400;
+
+      /* Estilo */
+      border-radius: 32px;
+      border: 1px solid #33A8DB;
+      background: #252525;
+      box-shadow: -2px 6px 4px 0px rgba(0, 0, 0, 0.40) inset;
+
+      /* Tamanho e Posição */
+      width: 480px;
+
+      /* Espaçamento */
+      margin: 48px;
+    }
+
+    .logo{
+      align-items: center;
+      text-align: center;
+
+      /* Círculo atrás do Logotipo */
+      border-radius: 124px; /* 248/2 */
+      background: rgba(0, 0, 0, 0.30);
+
+      width: 248px;
+      height: 224px;
+      
+      margin: 64px;
+    }
+
+    /* ============================= */
+    /* ============ IDs ============ */
+    /* ============================= */
+
+    #professional-challenges {
+      text-align: center;
+    }
+
+    #transform-world {
+      width: 100%;
+      height: 512px;
+      background: url(../assets/images/woman-code.png) lightgray 50% / cover no-repeat;
+      border-top: 1px solid #33A8DB;
+      border-bottom: 1px solid #33A8DB;
+    }
+
+    #transform-world p{
+      color: #FFF;
+      text-transform: lowercase;
+      text-shadow: 3px 2px 0px #33A8DB;
+      font-family: 'Raleway-Bold', sans-serif;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+    }
