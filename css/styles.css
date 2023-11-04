@@ -1,6 +1,7 @@
 /* Criação de Folha de Estilos (CSS) para desafio de código da DIO */
 
-p {
+/* CONFIGURAÇÕES MAIS UTILIZADAS COMO BASE */
+a, p {
   color: #FFF;
   text-align: center;
   font-family: Raleway;
@@ -10,10 +11,17 @@ p {
   line-height: normal;
 }
 
-.teste-estilo { /* NOME ABAIXO DO LOGOTIPO */
+/* NOME ABAIXO DO LOGOTIPO */
+.teste-estilo { 
 font-family: Raleway;
 font-size: 40px;
 font-style: normal;
 font-weight: 900;
 line-height: normal;
 }
+
+/* xxxxx */
+
+/* xxxxx */
+
+/* xxxxx */
