@@ -1,15 +1,10 @@
 /* Criação de Folha de Estilos (CSS) para desafio de código da DIO */
+/* ÚLTIMA VEZ EDITADO: 06-11-23*/
 
     /* IMPORTANDO FONTES GLOBAIS */
     @import url('https://fonts.googleapis.com/css2?family=Raleway');
 
-    /* CORPO DA PÁGINA */
-    body {
-      background-color: rgb(0, 0, 0);
-    }
-
-    /* SEÇÕES REGULARES */
-
+    /* CABEÇALHO */
     header {
       padding-top: 32px;
       padding-bottom: 48px;
@@ -22,25 +17,20 @@
                   rgba(0, 0, 0, 1.00) 100%);
 
     }
+    
+    /* CORPO DA PÁGINA */
+    body {
+      background-color: rgb(0, 0, 0);
+    }
 
-    /* header.banner,
-    div.banner-content,
-    div.logo {
-      justify-content: center;
-      align-items: center;
-    } */
-
+    /* CONTEÚDO DA PÁGINA */
     main {
       justify-content: center;
       align-items: center;
-      display: inline-flex;
-      flex-direction: column;
-      display: inline-flex;
-      gap: 24px;
     }
 
+    /* RODAPÉ */
     footer {
-
       padding-top: 64px;
       padding-bottom: 48px;
       margin-top: 64px;
@@ -48,6 +38,7 @@
       justify-content: center;
       align-items: center;
       border-top: 1px solid #33A8DB;
+
       background: linear-gradient(180deg, 
         rgba(51, 168, 219, 0.00) 0%, 
         rgba(51, 168, 219, 0.20) 100%);
@@ -59,13 +50,12 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-
     }
 
     footer a {  /* Hiperlink do rodapé */
       color: #33A8DB;
     }
-
+    
     /* =================================== */
     /* ============ ELEMENTOS ============ */
     /* =================================== */
@@ -82,8 +72,7 @@
       /* Fonte */
       font-family: 'Raleway', sans-serif;
       font-style: normal;      
-      font-weight: 400;
-      
+      font-weight: 400;      
     }
 
     /* HEADER 1 (Título) */
@@ -127,12 +116,48 @@
       margin: 48px;
     }
 
+    button {
+      margin: 0 auto;
+    }
+
     /* ================================= */
     /* ============ CLASSES ============ */
     /* ================================= */
 
-    .banner-content p {
+    .banner-content {
       font-size: 20px;
+      width: 40%;
+      text-align: center;
+      margin: 0 auto;    
+    }
+
+    .banner-content button{
+      border: 2px solid #3BA1CD;
+      background-color: transparent;  /*  mesmo que rgba(0,0,0,0.0); */
+      color: #31A8DD;
+      width: 326px;
+      text-transform: uppercase;
+      font-family: Raleway;
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: 3.36px;
+
+      margin-top: 32px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .logo {
+      margin: 0 auto;
+      margin-bottom: 16px;
+
+      /* Círculo atrás do Logotipo */
+      border-radius: 124px; /* 248/2 */
+      background: rgba(0, 0, 0, 0.30);
+
+      width: 248px;
+      height: 224px;
+      
     }
 
     .module {
@@ -140,7 +165,7 @@
       color: rgb(255, 255, 255);
 
       /* Parágrafo */
-      text-align: center;
+      /* text-align: center; NÃO PRECISA MAIS */
       line-height: 64px;
 
       /* Fonte */
@@ -158,40 +183,56 @@
       width: 480px;
 
       /* Espaçamento */
-      margin: 48px;
+      margin: 0 auto;
+      margin-top: 36px;
+      margin-bottom: 36px;
     }
 
-    .logo{
-      align-items: center;
-      text-align: center;
-
-      /* Círculo atrás do Logotipo */
-      border-radius: 124px; /* 248/2 */
-      background: rgba(0, 0, 0, 0.30);
-
-      width: 248px;
-      height: 224px;
-      
-      margin: 64px;
+    .module span {
+      color: #33A8DB;
     }
 
     /* ============================= */
     /* ============ IDs ============ */
     /* ============================= */
 
+    #course-content {
+      text-align: center;
+      width: 50%;
+      margin: 0 auto;
+    }
+
     #professional-challenges {
       text-align: center;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    #professional-challenges p {
+      margin-top: 32px;
     }
 
     #transform-world {
-      width: 100%;
+      /* Tamanho */
       height: 512px;
-      background: url(../assets/images/woman-code.png) lightgray 50% / cover no-repeat;
+
+      /* Imagem */
+      background-attachment: fixed; /* Efeito de Scroll */
+      background-image: url(../assets/images/woman-code.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+            
+      /* Bordas */
       border-top: 1px solid #33A8DB;
       border-bottom: 1px solid #33A8DB;
     }
 
     #transform-world p{
+      text-align: left;
+      margin-left: 128px;
+      margin-top: 144px;
+      width: 400px;
+
       color: #FFF;
       text-transform: lowercase;
       text-shadow: 3px 2px 0px #33A8DB;
