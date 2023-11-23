@@ -1,3 +1,7 @@
+# Um rápido "Obs.:" do Rafael_Sol_Maker
+
+A versão replicada da pagina, feita na unha com muito suor e sofrimento (e alguma ajuda do Figma) pode ser encontrado no seguinte link: [[Landing Page com HTML e CSS]](https://rafael-sol.github.io/trilha-css-desafio-01/)
+
 # Desafio 01: Criando sua primeira Landing Page com HTML e CSS
 
 Bem vindo(a) ao primeiro desafio da Trilha de CSS da DIO! Nela, você vai construir sua primeira Landing Page com HTML e CSS, colocando em prática os fundamentos do CSS,
